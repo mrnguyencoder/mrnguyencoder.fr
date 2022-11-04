@@ -1,0 +1,23 @@
+:root {
+
+}
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+/* make rem to 10 */
+html{
+    font-size: 62.5%;
+}
+/* responsive image */
+img{
+    width: 100%;
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+/* links */
+a{
+    text-decoration: none;
+}

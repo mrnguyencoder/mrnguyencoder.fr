@@ -8,13 +8,19 @@
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- aos animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Mr.Nguyen coder</title>
 </head>
 <body>
     <header>
         <nav class="nav collapsible">
-            <a href="#" class="nav__logo"><img src="images/logomrnguyencoder.png" alt="logo mr nguyen coder"></a>
-            <ul>
+            <a href="#" class="nav__logo"><img src="images/logomrnguyen.png" alt="logo mr nguyen coder"></a>
+            <div class="icon icon--white nav__toggler #menu">
+                <i class="fa-solid fa-bars-staggered"></i>
+            </div>     
+            <ul class="list nav__list collapsible__content">
                 <li class="nav__item"><a href="#"></a>About</li>
                 <li class="nav__item"><a href="#"></a>Experience</li>
                 <li class="nav__item"><a href="#"></a>Work</li>
@@ -22,7 +28,28 @@
             </ul>
         </nav>
     </header>
+    <section class="block block--dark block--skewed-left hero">
+        <div class="container grid grid--1x2">
+          <div class="block__header hero__content">
+            <h1 data-aos="fade-right" class="block__heading">
+              Mr NGUYEN Coder
+            </h1>
+            <p data-aos="fade-left" class="hero__tagline">
+              Full stack JavaScript
+            </p>
+            <a href="#" class="btn btn--accent btn--stretched">Email me</a>
+          </div>
+          <picture data-aos="zoom-in">
+            <img class="hero__image" src="images/logomrnguyencoder.png" alt="" />
+          </picture>
+        </div>
+    </section>
     
     <script src="js/main.js"></script>
+    <!-- aos animation -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>

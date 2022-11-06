@@ -15,12 +15,12 @@
 </head>
 <body>
     <header>
-        <nav class="nav collapsible">
+        <nav class="nav toggle">
             <a href="#" class="nav__logo"><img src="images/logomrnguyen.png" alt="logo mr nguyen coder"></a>
-            <div class="icon icon--white nav__toggler #menu">
-                <i class="fa-solid fa-bars-staggered"></i>
+            <div class="nav__toggler #menu">
+              <i class="fa-solid fa-bars-staggered"></i>
             </div>     
-            <ul class="list nav__list collapsible__content">
+            <ul class="list nav__list toggle__content">
                 <li class="nav__item"><a href="#"></a>About</li>
                 <li class="nav__item"><a href="#"></a>Experience</li>
                 <li class="nav__item"><a href="#"></a>Work</li>
@@ -28,65 +28,30 @@
             </ul>
         </nav>
     </header>
-    <section class="block block--dark block--skewed-left hero">
-        <div class="container grid grid--1x2">
-          <div class="block__header hero__content">
-            <h1 data-aos="fade-right" class="block__heading">
+    <section class="accueil">
+        <div class="container ">
+          <div class="">
+            <h1 data-aos="fade-right" class="">
               Mr NGUYEN Coder
             </h1>
-            <p data-aos="fade-left" class="hero__tagline">
+            <p data-aos="fade-left" class="">
               Full stack JavaScript
             </p>
-            <a href="#" class="btn btn--accent btn--stretched">Email me</a>
+            <a href="#" class="btn">Email me</a>
           </div>
           <picture data-aos="zoom-in">
-            <img class="hero__image" src="images/logomrnguyencoder.png" alt="" />
+            <img class="accueil__image" src="images/logomrnguyencoder.png" alt="" />
           </picture>
         </div>
     </section>
-    <section class="block" data-aos="zoom-in">
-        <div class="block__header">
-          <h2>Get know more about me</h2>
-          <p>
-            8 years background in business and switch to development almost 1 years
-          </p>
-        </div>
-        <div class="container">
-          <div class="card aboutme">
-            <div class="grid grid--1x2">
-              <div class="aboutme__image">
-                <img
-                  src="images/mrnguyencoder.png"
-                  alt=""
-                />
-                <span class="icon-container icon-container--accent">
-                  <svg class="icon icon--white icon--small">
-                    <use href="images/mrnguyencoder.png"></use>
-                  </svg>
-                </span>
-              </div>
-              <blockquote class="quote">
-                <p class="quote__text">
-                  never give up
-                </p>
-                <footer>
-                  <div class="media">
-                    <div class="media__image">
-                      <svg class="icon icon--primary quote__line">
-                        <use href="images/sprite.svg#line"></use>
-                      </svg>
-                    </div>
-                    <div class="media__body">
-                      <h3 class="media__title quote__author">Mr NGUYEN Coder</h3>
-                      <p class="quote__organization">Freelance</p>
-                    </div>
-                  </div>
-                </footer>
-              </blockquote>
-            </div>
-          </div>
-        </div>
-      </section>
+    <section class="aboutme block" data-aos="zoom-in">
+      <div class="aboutme__header">
+        <h2>Get know more about me</h2>
+      </div>
+      <div class="aboutme__content">
+
+      </div>
+    </section>
     
     <script src="js/main.js"></script>
     <!-- aos animation -->

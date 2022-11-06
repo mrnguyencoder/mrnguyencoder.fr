@@ -6,13 +6,13 @@ html{
   font-style: 62.5%;
 }
 :root{
-  --color-body: #fff;
-  --color-headings: #5e17eb;
-  --color-primary: #008037 ;
-  --color-secondary:#ffda59 ;
-  --border-radius: 30px;
-
-
+  /* --dark-navy: #020c1b; */
+  --navy: #0a192f;
+  --light-navy: #112240;
+  --lightest-navy: #233554;
+  --white: #e6f1ff;
+  --green: #64ffda;
+  --blue: #57cbff;
 }
 /* make pics responsive */
 img{
@@ -21,14 +21,14 @@ img{
 body{
   font-size: 2rem;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  color: ;
+  background-color: var(--lightest-navy);
 }
 h1,h2,h3 {
-  color: #5e17eb;
+  color: var(--green);
   margin-bottom: 1rem;
 }
 h1{
-  font-size: 1rem;
+  font-size: 6rem;
 }
 h2{
   font-size: 4rem;
@@ -36,23 +36,9 @@ h2{
 h3{
   font-style: 2.8rem;
 }
-
-@media screen and (min-width: 1024px) {
-  body {
-    font-size: 1.8rem;
-  }
-
-  h1 {
-    font-size: 8rem;
-  }
-
-  h2 {
-    font-size: 4rem;
-  }
-
-  h3 {
-    font-size: 2.4rem;
-  }
+p{
+  font-size: 1.5rem;
+  color: var(--white);
 }
 .list {
   list-style: none;
@@ -60,12 +46,12 @@ h3{
 }
 /* navigation */
 .nav{
-  background: #000000;
+  background: var(--light-navy);
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 1rem;
+  padding: 0.2rem 1rem;
 }
 .nav__logo{
   width: 150px;
@@ -74,32 +60,51 @@ h3{
 .nav__list {
   margin: 0;
   width: 100%;
-  color: #008037;
+  color: var(--white);
 }
 .nav__item{
-  padding: 0.5rem 2rem;
+  padding: 1rem 1rem;
   font-size: 1rem;
-  border-bottom: 1px solid #ffda59;
+  border-bottom: 0.5px solid var(--navy);
+  transition: color 0.5s;
+}
+.nav__item:hover{
+  color: var(--green);
 }
 .nav__toggler{
+  width: 30px;
+  height: 30px;
   cursor: pointer;
   transition: box-shadow 0.15s;
   opacity: 0.5;
-  color: white;
-  width: 30px;
-  height: 30px;
+  color: var(--green);
 }
-.toggle {
- 
-}
-
-.toggle__content {
+.collapse__content{
   max-height: 0;
   overflow: hidden;
   opacity: 0;
   transition: all 0.3s;
 }
-.toggle--expanded .toggle__content {
+.collapse--expanded .collapse__content{
   max-height: 100vh;
   opacity: 1;
 }
+.nav.collapse--expanded .nav__toggler {
+  opacity: 1;
+}
+@media screen and (min-width: 768px) {
+  .nav__toggler {
+    display: none;
+  }
+  .nav__list {
+    width: auto;
+    display: flex;
+    font-size: 1.6rem;
+    max-height: 100%;
+    opacity: 1;
+  }
+  .nav__item {
+    border: 0;
+  }
+}
+

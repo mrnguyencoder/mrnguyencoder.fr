@@ -1,6 +1,6 @@
-const toggles = document.querySelectorAll(".toggle");
-toggles.forEach((item) =>
+const collapses = document.querySelectorAll(".collapse");
+collapses.forEach((item) =>
   item.addEventListener("click", function () {
-    this.classList.toggle("toggle--expanded");
+    this.classList.toggle("collapse--expanded");
   })
 );

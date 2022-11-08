@@ -107,4 +107,37 @@ p{
     border: 0;
   }
 }
+/* accueil */
+.accueil{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero{
+  display: grid;
+}
+@media screen and (min-width: 768px) {
+  .grid--1x2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.accueil__text
+.accueil__icon {
+  
+}
+.fa-brands{
+  padding: 2rem;
+}
+.fa-square-js{
+  color: #f0db4f;
+}
+.fa-html5{
+  color: #f06529;
+}
+.fa-css3-alt{
+  color: #2965f1;
+}
+.fa-react{
+  color:#61dbfb;
+}
 

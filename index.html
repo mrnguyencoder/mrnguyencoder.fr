@@ -22,22 +22,23 @@
       </div>     
       <ul class="list nav__list collapse__content">
         <li class="nav__item"><a href="#aboutme"></a>About</li>
-        <li class="nav__item"><a href="#skills"></a>Skills</li>
+        <li class="nav__item"><a href="#projects"></a>Projects</li>
         <li class="nav__item"><a href="#contact"></a>Contact</li>
       </ul>
     </nav>
   </header>
-  <section class="container accueil">
+  <section class="container accueil" id="accueil">
     <div class="grid grid--1x2">
       <div class="accueil__text">
-        <h1 data-aos="fade-right">
+        <h1 data-aos="zoom-in-up"
+            data-aos-anchor-placement="center-center">
           Mr NGUYEN Coder
         </h1>
-        <p data-aos="fade-left">
+        <p data-aos="zoom-in-down">
           happy coding...
         </p>
       </div>
-      <div class="accueil__icon">
+      <div class="accueil__icon" data-aos="zoom-in">
         <i class="fa-brands fa-html5"></i>
         <i class="fa-brands fa-css3-alt"></i>
         <i class="fa-brands fa-square-js"></i>
@@ -46,21 +47,88 @@
       </div>
     </div>
   </section>
-  <section class="aboutme container">
+  <section class="aboutme container" id="aboutme">
       <div class="container__header">
-        <h2 class="aboutme">About me</h2>
+        <h2 class="aboutme" data-aos="fade-right">About me</h2>
       </div>
       <div class="grid grid--1x2">
         <div>
-          <h3>Start My Coding Journey</h3>
-          <h4>JavaScript is my Language</h4>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor quasi, nostrum culpa ullam deleniti cupiditate dolorem assumenda impedit, molestiae cum adipisci repudiandae magni nemo animi maiores ex odit atque esse voluptatibus excepturi. Ratione quos aut eligendi quae, laboriosam sapiente illo fuga, sed vero sunt unde, provident id totam numquam. Illum.</p>
+          <h3 data-aos="fade-left">My Coding Journey</h3>
+          <h4 data-aos="fade-up-right">JavaScript is my Language</h4>
+          <p data-aos="fade-down-left">
+            It's not easy for me to skip eight years of business experience and switch to programming.<br>
+            I have an overview of the programming industry after being trained for 5 months in Full-stack.<br>
+            After spending time researching, I chose to become a programmer with JavaScript.<br>
+            I have started to relearn the knowledge and also practice the knowledge that I have learned,
+            I believe that only a lot of practice can become a good programmer.
+          </p>
         </div>
-        <div class="aboutme__img">
+        <div class="aboutme__img" data-aos="zoom-in">
           <img src="images/mrnguyencoder.png" alt="">
         </div>
       </div>  
   </section>
+
+  <section class="projects container" id="projects">
+    <div class="container__header">
+      <h2 class="projects">My projects</h2>
+      <p>Projects completed during practice</p>
+    </div>
+    <div class="grid grid--1x2 feature">
+      <div class="feature__content" data-aos="fade-right">
+        <h3 class="feature__heading">1. Personal Website</h3>
+        <h4>HTML5-CSS3-JS</h4>
+        <p>
+          Work faster with keyboard shortcuts<br>
+          Deeper understanding of CSS: Layout, Typography, Maintainable 
+        </p>
+      </div>
+      <div data-aos="zoom-in-left">
+        <img src="images/logomrnguyencoder.png" alt="">
+      </div>
+    </div>  
+    <div class="grid grid--1x2 feature">
+      <div>
+        <h3 class="feature__heading">2.unemaintendue-conseils.fr/</h3>
+        <h4>HTML5-CSS3</h4>
+        <p>
+          Understand the basics of how to:<br>
+          Deployment<br>
+          SEO
+        </p>
+      </div>
+      <div>
+        <img src="images/unematendue.png" alt="">
+      </div>
+    </div> 
+</section>
+
+<section class="contact container" id="contact">
+  <div class="container__header">
+    <h2 class="projects">Let's talk</h2>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer__logo">
+    <img src="images/logomrnguyen.png" alt="">
+  </div>
+  <div class="contact__icon">
+    <a href="https://github.com/mrnguyencoder" target="_blank">
+      <i class="fa-brands fa-square-github"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/mr-nguyen-coder-27a744254/" target="_blank">
+      <i class="fa-brands fa-linkedin"></i>
+    </a>
+    <a href="https://www.instagram.com/mrnguyencoder/" target="_blank">
+      <i class="fa-brands fa-square-instagram"></i>
+    </a>
+    <a href="https://codepen.io/mrnguyencoder" target="_blank">
+      <i class="fa-brands fa-codepen"></i>
+    </a>   
+  </div>
+  </div>
+</footer>
     
   <script src="js/main.js"></script>
   <!-- aos animation -->

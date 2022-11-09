@@ -10,7 +10,7 @@ html{
   --light-navy: #112240;
   --lightest-navy: #233554;
   --white: #e6f1ff;
-  --green: #2965f1;
+  --green: #64ffda;
   --blue: #61dbfb;
   --yellow: #f0db4f;
 }
@@ -23,7 +23,7 @@ body{
   background-color: var(--lightest-navy);
 }
 h1{
-  color: var(--blue);
+  color: var(--green);
 }
 h2{
   font-size: 4rem;
@@ -37,19 +37,21 @@ h3{
 }
 h4{
   font-size: 2.2rem;
-  color: beige,
+  color: var(--green);
   margin-bottom: 0;
 }
 p{
   font-size: 1.5rem;
   color: var(--white);
+  letter-spacing: 1.5px;
+  line-height: 2.5rem;
 }
 .list {
   list-style: none;
   padding-left: 0;
 }
 /* navigation */
-.nav{
+.nav {
   background: var(--light-navy);
   display: flex;
   align-items: center;
@@ -133,8 +135,8 @@ p{
 }
 /* accueil */
 .accueil {
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center;
+  align-items: center; */
 }
 .accueil__text{
   text-align: center;
@@ -181,7 +183,55 @@ p{
   color:var(--white);
 }
 
-/* aboutme */
+/* Features */
+.feature {
+  gap: 4rem 2rem;
+  margin: 4rem 0;
+}
+
+.feature:first-of-type {
+  margin-top: 3rem;
+}
+
+.feature__heading {
+  margin: 1rem 0;
+}
+
+@media screen and (min-width: 768px) {
+  .feature:nth-of-type(even) .feature__content {
+    order: 2;
+  }
+}
+
+.footer{
+  background-color: var(--light-navy);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__logo{
+  padding-left: 1rem;
+}
+.footer__logo img{
+  width: 150px;
+}
+.contact__icon .fa-brands {
+  font-size: 2rem;
+}
+.fa-square-github{
+  color: #F1502F ;
+}
+.fa-linkedin{
+  color:#0e76a8 ;
+}
+.fa-square-instagram{
+  color:#E4405F;
+}
+.fa-codepen{
+  color:white;
+}
+
 
 
 

@@ -21,9 +21,9 @@
         <i class="fa-solid fa-bars-staggered"></i>
       </div>     
       <ul class="list nav__list collapse__content">
-        <li class="nav__item"><a href="#aboutme"></a>About</li>
-        <li class="nav__item"><a href="#projects"></a>Projects</li>
-        <li class="nav__item"><a href="#contact"></a>Contact</li>
+        <li><a class="nav__item" href="#aboutme">About</a></li>
+        <li><a class="nav__item" href="#projects">Projects</a></li>
+        <!-- <li class="nav__item"><a href="#contact"></a>Contact</li> -->
       </ul>
     </nav>
   </header>
@@ -56,7 +56,6 @@
           <h3 data-aos="fade-left">My Coding Journey</h3>
           <h4 data-aos="fade-up-right">JavaScript is my Language</h4>
           <p data-aos="fade-down-left">
-            It's not easy for me to skip eight years of business experience and switch to programming.<br>
             I have an overview of the programming industry after being trained for 5 months in Full-stack.<br>
             After spending time researching, I chose to become a programmer with JavaScript.<br>
             I have started to relearn the knowledge and also practice the knowledge that I have learned,
@@ -103,11 +102,27 @@
     </div> 
 </section>
 
-<section class="contact container" id="contact">
+<!-- <section class="contact container" id="contact">
   <div class="container__header">
     <h2 class="projects">Let's talk</h2>
   </div>
-</section>
+  <div>
+    <form
+      action="https://formspree.io/f/xaykaaln"
+      method="POST"
+    >
+      <label>
+        Your email:
+        <input type="email" name="email">
+      </label>
+      <label>
+        Your message:
+        <textarea name="message"></textarea>
+      </label>
+      <button type="submit">Send</button>
+    </form>
+  </div>
+</section> -->
 
 <footer class="footer">
   <div class="footer__logo">
@@ -136,5 +151,17 @@
   <script>
     AOS.init();
   </script>
+  <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+
+  <script>
+    window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments);};   
+    formbutton("create", {
+      action: "https://formspree.io/f/xaykaaln",
+      initiallyVisible: true
+    });
+  </script>
+  <button onClick="formbutton('toggleForm')">Toggle Form</button>
+  
+  
 </body>
 </html>
